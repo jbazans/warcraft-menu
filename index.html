@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="main-content">
+		<img src="img/logo-wc.png" id="logo">
+		<img src="img/menu-wc.png" id="menu">
+		<h3 id="h3-1"><span>S</span>ingle Player</h3>
+		<h3 id="h3-2"><span>B</span>attle.net</h3>
+		<h3 id="h3-3"><span>L</span>ocal Area Network</h3>
+		<h3 id="h3-4"><span>O</span>ptions</h3>
+		<h3 id="h3-5"><span>C</span>redits</h3>
+		<h3 id="h3-6"><span>Q</span>uit</h3>
+	</div>
+	<script type="text/javascript">
+		var array=document.getElementsByTagName("h3");
+		var sound=new Audio("click.ogg");
+		for (var i = 0; i < array.length; i++) {
+			array[i].addEventListener('click',function(){
+				sound.play();
+			});
+		}
+		window.addEventListener('resize',function(){
+			//ANCHO DE LA PANTALLA
+			//console.log(window.innerWidth);
+
+			//ALTO DE LA PANTALLA
+			//console.log(window.innerHeight);
+		});
+	</script>
+</body>
+</html>
